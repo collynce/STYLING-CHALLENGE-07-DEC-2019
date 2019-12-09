@@ -1,0 +1,208 @@
+@import "config";
+
+body {
+  margin: 0;
+  background-color: darken($primaryColor, 2) !important;
+
+}
+
+@mixin background_image {
+  background: $imageThree;
+}
+
+hr {
+  border: $primaryColor 1px solid;
+  margin: 10px 0;
+  padding: 0;
+  height: 30px;
+}
+
+.container {
+  //display: grid;
+  &_navbar {
+    background: $secondaryColor;
+    padding: 1px;
+
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      flex-wrap: wrap;
+      list-style: none;
+      color: aliceblue;
+
+      li {
+        margin: 0 8px;
+      }
+
+      .navbar_logo {
+        justify-content: left;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 3.5px 80px;
+        font-family: $fontFamily;
+      }
+
+      .navbar_item {
+        padding: 12px;
+        //margin: inherit;
+        margin: 2px 0 5px 15px;
+        font-size: 12px;
+        //color: aliceblue;
+        justify-content: center;
+        font-family: $fontFamily;
+      }
+      .bold{
+        font-weight: bold;
+      }
+
+      .separator {
+        font-size: 22px;
+        margin: 8px 0;
+        padding: inherit;
+
+      }
+
+    }
+
+
+  }
+
+  &_hero {
+    .grid-x {
+
+      div {
+        .hero_text{
+          color: lighten($primaryColor, 5);
+          font-weight: bold;
+          //text-align: center;
+          padding: 70% 30px 0;
+        }
+        &:nth-child(1) {
+          background: linear-gradient(to bottom, rgba(146,	69,	106	, 0.5), rgba(117, 19, 93, 0.73)), $imageOne;
+          //width: 180%;
+          background-size: cover;
+          height: 400px;
+        }
+
+        &:nth-child(2) {
+          background: linear-gradient(to bottom, rgba(39,	46,	107		, 0.5), rgba(11, 19, 93, 0.73)), $imageTwo;
+
+          //width: 200%;
+          //opacity: 70%;
+          background-size: cover;
+          height: 400px;
+        }
+
+        &:nth-child(3) {
+          background: linear-gradient(to bottom, rgba(99,	120,	61	, 0.5), rgba(11, 100, 93, 0.73)), $imageThree ;
+          //width: 200%;
+          //opacity: 70%;
+          background-size: cover;
+          height: 400px;
+        }
+
+        p {
+          text-align: left;
+          //padding: 200px 15px;
+        }
+
+
+      }
+    }
+
+  }
+
+  &_section {
+    //display: grid;
+    //grid-gap: 20px;
+    padding: 50px;
+    &_topics {
+
+      p {
+        //margin: 10px;
+        padding: 5px;
+
+        span {
+          margin: auto;
+          padding: 0 95.4%;
+        }
+      }
+    }
+
+    &_items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+      margin: 80px;
+
+      div {
+
+        background: lighten($primaryColor, 0);
+        list-style: none;
+        //padding: 50px 100px;
+        //justify-content: center;
+        padding: 30px;
+        height: 100px;
+        text-align: left;
+        border-radius: 2px;
+        box-shadow: 0 3.5px 5px 0 darken($primaryColor, 8);
+
+        &:nth-child(1) {
+          border-bottom: rgba(147 206 76) 4px solid;
+        }
+
+        &:nth-child(2) {
+          border-bottom: rgba(222 116 2) 4px solid;
+        }
+
+        &:nth-child(3) {
+          border-bottom: rgba(42 183 235) 4px solid;
+        }
+
+        //display: flex;
+        span {
+          text-align: right;
+        }
+
+
+      }
+    }
+
+    &_recents {
+
+
+    }
+  }
+}
+
+.grid-container{
+  margin: 0 70px !important;
+  h5{
+    span{
+      float: right;
+      border-radius: 50%;
+      font-size: 20px;
+      //color: #3adb76;
+
+    }
+  }
+  .grid-x{
+    .cell{
+      //background: #3adb76;
+      margin: 5px;
+    }
+  }
+}
+  .card{
+    height: 180px;
+    &-section{
+      padding: 30px !important;
+      //margin: 20px;
+      h5{
+        font-weight: bold;
+        span{
+          float: right;
+        }
+      }
+    }
+  }

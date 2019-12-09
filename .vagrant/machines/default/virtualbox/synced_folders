@@ -1,0 +1,1 @@
+{"virtualbox":{"/projects":{"create":true,"guestpath":"/projects","hostpath":"/Users/ckiprotich/Desktop/Projects/mydesign/design","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/ckiprotich/Desktop/Projects/mydesign","disabled":false,"__vagrantfile":true}}}
