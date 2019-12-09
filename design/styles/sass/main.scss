@@ -111,7 +111,13 @@ hr {
     }
 
   }
-
+.button-group{
+  button{
+    &:hover{
+      background: #3adb76;
+    }
+  }
+}
   &_section {
     //display: grid;
     //grid-gap: 20px;
