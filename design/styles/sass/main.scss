@@ -3,7 +3,7 @@
 body {
   margin: 0;
   background-color: darken($primaryColor, 2) !important;
-
+  font-family: $fontFamily;
 }
 
 @mixin background_image {
@@ -11,14 +11,62 @@ body {
 }
 
 hr {
-  border: $primaryColor 1px solid;
-  margin: 10px 0;
-  padding: 0;
-  height: 30px;
 }
 
 .container {
   //display: grid;
+  .sharp_daily {
+    .grid-container {
+      // margin: 40px;
+
+      width: 80%;
+      padding: 30px 0;
+      margin-bottom: 10px;
+    }
+  }
+  .recent_news {
+    background: lighten($primaryColor, 10);
+    // padding: 30px;
+    .grid-container {
+      width: 80%;
+      padding: 30px 0;
+      margin-bottom: 0;
+      .header_card {
+        padding-left: 10px;
+        .more {
+          float: right;
+          border-radius: 50%;
+          font-size: 12px;
+          // width: 40%;
+          // color: #3adb76;
+        }
+      }
+      .grid-x {
+        .central-grid {
+          // padding: 0;
+
+          // max-width: -2px;
+          .grid-x {
+            // padding: 0 40px 40px 0px;
+            font-size: 15.5px;
+            h5 {
+              font-size: medium;
+            }
+            span {
+              font-size: smaller;
+            }
+            p {
+              padding: 7px 0;
+            }
+          }
+          .image {
+            // height: 50%;
+            // width: 100%;
+          }
+        }
+      }
+    }
+  }
   &_navbar {
     background: $secondaryColor;
     padding: 1px;
@@ -51,7 +99,7 @@ hr {
         justify-content: center;
         font-family: $fontFamily;
       }
-      .bold{
+      .bold {
         font-weight: bold;
       }
 
@@ -59,33 +107,41 @@ hr {
         font-size: 22px;
         margin: 8px 0;
         padding: inherit;
-
       }
-
     }
-
-
   }
 
   &_hero {
     .grid-x {
-
       div {
-        .hero_text{
+        .hero_text {
           color: lighten($primaryColor, 5);
           font-weight: bold;
           //text-align: center;
-          padding: 70% 30px 0;
+          padding: 50% 30px 0;
+          h6 {
+            font-size: 12px;
+          }
         }
         &:nth-child(1) {
-          background: linear-gradient(to bottom, rgba(146,	69,	106	, 0.5), rgba(117, 19, 93, 0.73)), $imageOne;
+          background: linear-gradient(
+              to bottom,
+              rgba(146, 69, 106, 0.5),
+              rgba(117, 19, 93, 0.73)
+            ),
+            $imageOne;
           //width: 180%;
           background-size: cover;
           height: 400px;
         }
 
         &:nth-child(2) {
-          background: linear-gradient(to bottom, rgba(39,	46,	107		, 0.5), rgba(11, 19, 93, 0.73)), $imageTwo;
+          background: linear-gradient(
+              to bottom,
+              rgba(39, 46, 107, 0.5),
+              rgba(11, 19, 93, 0.73)
+            ),
+            $imageTwo;
 
           //width: 200%;
           //opacity: 70%;
@@ -94,7 +150,12 @@ hr {
         }
 
         &:nth-child(3) {
-          background: linear-gradient(to bottom, rgba(99,	120,	61	, 0.5), rgba(11, 100, 93, 0.73)), $imageThree ;
+          background: linear-gradient(
+              to bottom,
+              rgba(99, 120, 61, 0.5),
+              rgba(11, 100, 93, 0.73)
+            ),
+            $imageThree;
           //width: 200%;
           //opacity: 70%;
           background-size: cover;
@@ -105,25 +166,21 @@ hr {
           text-align: left;
           //padding: 200px 15px;
         }
-
-
       }
     }
-
   }
-.button-group{
-  button{
-    &:hover{
-      background: #3adb76;
+  .button-group {
+    button {
+      &:hover {
+        background: #3adb76;
+      }
     }
   }
-}
   &_section {
     //display: grid;
     //grid-gap: 20px;
     padding: 50px;
     &_topics {
-
       p {
         //margin: 10px;
         padding: 5px;
@@ -142,7 +199,6 @@ hr {
       margin: 80px;
 
       div {
-
         background: lighten($primaryColor, 0);
         list-style: none;
         //padding: 50px 100px;
@@ -169,46 +225,89 @@ hr {
         span {
           text-align: right;
         }
-
-
       }
     }
 
     &_recents {
-
-
     }
   }
 }
 
-.grid-container{
-  margin: 0 70px !important;
-  h5{
-    span{
+.grid-container {
+  // margin: 60px 100px !important;
+  .sharp_news {
+    margin: 20px;
+    span {
       float: right;
-      border-radius: 50%;
-      font-size: 20px;
-      //color: #3adb76;
+    }
+  }
 
+  .grid-x {
+    .central-grid {
+      // padding: 0 40px;
+      // margin: 10;
+      .grid-x {
+        // font-size: small;
+      }
     }
-  }
-  .grid-x{
-    .cell{
-      //background: #3adb76;
-      margin: 5px;
+    .side_grid_container {
+      p {
+        font-size: 11px;
+      }
+      h6 {
+        font-size: small;
+      }
+
+      .side_grid {
+        background: darken($primaryColor, 4);
+        margin: 5px 0;
+        padding: 10px;
+        div {
+          padding: 5px;
+        }
+      }
     }
-  }
-}
-  .card{
-    height: 180px;
-    &-section{
-      padding: 30px !important;
-      //margin: 20px;
-      h5{
+    .cell {
+      // margin: 5px;
+      button {
+        background: rgba(230 230 230);
+        // padding-right: 6px !important;
+      }
+      .pagination_next {
+        float: right !important;
+        margin: 50% 1px 0 0 !important;
+        width: 30px !important;
+        background: red !important;
+      }
+      h5 {
         font-weight: bold;
-        span{
-          float: right;
+      }
+      .card {
+        .card_1 {
+          border-bottom: rgba(147 206 76) 4px solid;
+          padding: 20px 20px 50px 30px;
+        }
+        .card_2 {
+          border-bottom: rgba(222 116 2) 4px solid;
+          padding: 20px 20px 50px 30px;
+        }
+        .card_3 {
+          border-bottom: rgba(42 183 235) 4px solid;
+          padding: 20px 20px 50px 30px;
+        }
+        // padding: 5px;
+        &-section {
+          font-size: small;
+          h5 {
+            font-weight: bold;
+            font-size: medium;
+            padding-bottom: 5px;
+            span {
+              float: right;
+            }
+          }
         }
       }
     }
   }
+}

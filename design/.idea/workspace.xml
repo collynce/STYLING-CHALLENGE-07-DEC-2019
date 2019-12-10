@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7102a7e3-19c4-4aba-b654-8f8e3bfddcdf" name="Default Changelist" comment="" />
+    <list default="true" id="7102a7e3-19c4-4aba-b654-8f8e3bfddcdf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/sass/_config.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/sass/_config.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ubuntu-bionic-18.04-cloudimg-console.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ubuntu-bionic-18.04-cloudimg-console.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +20,11 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Ugo26pV3bmw9ZOXaA2jYL5bzeW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -47,7 +59,21 @@
       <option name="presentableId" value="Default" />
       <updated>1575787389410</updated>
       <workItem from="1575787392954" duration="3253000" />
-      <workItem from="1575790928052" duration="65737000" />
+      <workItem from="1575790928052" duration="71525000" />
+      <workItem from="1575945456657" duration="102000" />
+      <workItem from="1575945582424" duration="92000" />
+      <workItem from="1575945754979" duration="14000" />
+      <workItem from="1575945792578" duration="30000" />
+      <workItem from="1575946015023" duration="94000" />
+      <workItem from="1575952754596" duration="2000" />
+      <workItem from="1575954067928" duration="681000" />
+      <workItem from="1575982969455" duration="347000" />
+      <workItem from="1575983856541" duration="26000" />
+      <workItem from="1575983900756" duration="23000" />
+      <workItem from="1575983941873" duration="100000" />
+      <workItem from="1575984058400" duration="73000" />
+      <workItem from="1575984149576" duration="52000" />
+      <workItem from="1575984228755" duration="394000" />
     </task>
     <servers />
   </component>
@@ -55,10 +81,11 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="149" y="48" key="SettingsEditor" timestamp="1575809856950">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="149" y="30" key="SettingsEditor" timestamp="1575984284210">
+      <screen x="0" y="22" width="1280" height="730" />
     </state>
     <state x="149" y="48" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1575809856950" />
+    <state x="149" y="30" key="SettingsEditor/0.22.1280.730@0.22.1280.730" timestamp="1575984284210" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1575844296386">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

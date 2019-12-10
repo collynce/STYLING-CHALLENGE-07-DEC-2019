@@ -1,15 +1,42 @@
 body {
   margin: 0;
   background-color: #f4f4f4 !important;
+  font-family: "proxima nova";
 }
 
-hr {
-  border: #f9f9f9 1px solid;
-  margin: 10px 0;
-  padding: 0;
-  height: 30px;
+.container .sharp_daily .grid-container {
+  width: 80%;
+  padding: 30px 0;
+  margin-bottom: 10px;
 }
-
+.container .recent_news {
+  background: white;
+}
+.container .recent_news .grid-container {
+  width: 80%;
+  padding: 30px 0;
+  margin-bottom: 0;
+}
+.container .recent_news .grid-container .header_card {
+  padding-left: 10px;
+}
+.container .recent_news .grid-container .header_card .more {
+  float: right;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.container .recent_news .grid-container .grid-x .central-grid .grid-x {
+  font-size: 15.5px;
+}
+.container .recent_news .grid-container .grid-x .central-grid .grid-x h5 {
+  font-size: medium;
+}
+.container .recent_news .grid-container .grid-x .central-grid .grid-x span {
+  font-size: smaller;
+}
+.container .recent_news .grid-container .grid-x .central-grid .grid-x p {
+  padding: 7px 0;
+}
 .container_navbar {
   background: #0b0814;
   padding: 1px;
@@ -29,14 +56,14 @@ hr {
   font-size: 25px;
   font-weight: bold;
   margin: 3.5px 80px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "proxima nova";
 }
 .container_navbar ul .navbar_item {
   padding: 12px;
   margin: 2px 0 5px 15px;
   font-size: 12px;
   justify-content: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "proxima nova";
 }
 .container_navbar ul .bold {
   font-weight: bold;
@@ -49,7 +76,10 @@ hr {
 .container_hero .grid-x div .hero_text {
   color: white;
   font-weight: bold;
-  padding: 70% 30px 0;
+  padding: 50% 30px 0;
+}
+.container_hero .grid-x div .hero_text h6 {
+  font-size: 12px;
 }
 .container_hero .grid-x div:nth-child(1) {
   background: linear-gradient(to bottom, rgba(146, 69, 106, 0.5), rgba(117, 19, 93, 0.73)), url("../../assets/images/high.jpg");
@@ -109,28 +139,59 @@ hr {
 .container_section_items div span {
   text-align: right;
 }
-.grid-container {
-  margin: 0 70px !important;
+.grid-container .sharp_news {
+  margin: 20px;
 }
-.grid-container h5 span {
+.grid-container .sharp_news span {
   float: right;
-  border-radius: 50%;
-  font-size: 20px;
 }
-.grid-container .grid-x .cell {
-  margin: 5px;
+.grid-container .grid-x .side_grid_container p {
+  font-size: 11px;
 }
-
-.card {
-  height: 180px;
+.grid-container .grid-x .side_grid_container h6 {
+  font-size: small;
 }
-.card-section {
-  padding: 30px !important;
+.grid-container .grid-x .side_grid_container .side_grid {
+  background: #efefef;
+  margin: 5px 0;
+  padding: 10px;
 }
-.card-section h5 {
+.grid-container .grid-x .side_grid_container .side_grid div {
+  padding: 5px;
+}
+.grid-container .grid-x .cell button {
+  background: #e6e6e6;
+}
+.grid-container .grid-x .cell .pagination_next {
+  float: right !important;
+  margin: 50% 1px 0 0 !important;
+  width: 30px !important;
+  background: red !important;
+}
+.grid-container .grid-x .cell h5 {
   font-weight: bold;
 }
-.card-section h5 span {
+.grid-container .grid-x .cell .card .card_1 {
+  border-bottom: #93ce4c 4px solid;
+  padding: 20px 20px 50px 30px;
+}
+.grid-container .grid-x .cell .card .card_2 {
+  border-bottom: #de7402 4px solid;
+  padding: 20px 20px 50px 30px;
+}
+.grid-container .grid-x .cell .card .card_3 {
+  border-bottom: #2ab7eb 4px solid;
+  padding: 20px 20px 50px 30px;
+}
+.grid-container .grid-x .cell .card-section {
+  font-size: small;
+}
+.grid-container .grid-x .cell .card-section h5 {
+  font-weight: bold;
+  font-size: medium;
+  padding-bottom: 5px;
+}
+.grid-container .grid-x .cell .card-section h5 span {
   float: right;
 }
 
